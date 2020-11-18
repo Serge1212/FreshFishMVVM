@@ -11,8 +11,7 @@ namespace FreshFishMVVM.Helpers
     public class WorkerHelper : IHelper<Worker>
     {
         public async Task<List<Worker>> GetAllAsync()
-        {
-            return (await Globals.Client
+        => (await Globals.Client
                 .Child("workers")
                 .OnceAsync<Worker>()).Select(item => new Worker
                 {
@@ -26,7 +25,7 @@ namespace FreshFishMVVM.Helpers
                     Address = item.Object.Address,
                     AdditionalInfo = item.Object.AdditionalInfo
                 }).ToList();
-        }
+        
 
         public async Task AddAsync(Worker worker)
         {
