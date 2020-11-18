@@ -1,0 +1,182 @@
+﻿<Page x:Class="FreshFishMVVM.Views.Pages.VehiclesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FreshFishMVVM.Views.Pages"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    mc:Ignorable="d"
+    d:DesignHeight="450"
+    d:DesignWidth="900"
+    FontSize="13"
+    FontFamily="{StaticResource LatoRegular}"
+    Foreground="#FF014E81">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="40" />
+            <RowDefinition
+                Height="400" />
+            <RowDefinition
+                Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="*" />
+            <ColumnDefinition
+                Width="410" />
+            <ColumnDefinition
+                Width="350" />
+            <ColumnDefinition
+                Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border
+            Grid.Column="1"
+            Grid.RowSpan="2"
+            Style="{StaticResource BaseFrameBorder}"
+            Grid.ColumnSpan="2"
+            Height="40"
+            Margin="20,2,20,0">
+            <Grid
+                Style="{StaticResource FrameGridInBorder}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="15" />
+                    <ColumnDefinition
+                        Width="185" />
+                    <ColumnDefinition
+                        Width="10" />
+                    <ColumnDefinition
+                        Width="255" />
+                    <ColumnDefinition
+                        Width="*" />
+                    <ColumnDefinition
+                        Width="140" />
+                    <ColumnDefinition
+                        Width="25" />
+                </Grid.ColumnDefinitions>
+                <Grid
+                    Grid.Column="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="30" />
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="30" />
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="30" />
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="30" />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        Grid.Column="0"
+                        Style="{StaticResource FrameButtonExcel}" />
+                    <Button
+                        Command="{Binding AddCommand}"
+                        Grid.Column="2"
+                        Style="{StaticResource FrameButtonAdd}" />
+                    <Button
+                        Command="{Binding EditCommand}"
+                        CommandParameter="{Binding SelectedWorker}"
+                        Grid.Column="4"
+                        Style="{StaticResource FrameButtonEdit}" />
+                    <Button
+                        Command="{Binding RemoveCommand}"
+                        CommandParameter="{Binding SelectedWorker}"
+                        Grid.Column="6"
+                        Style="{StaticResource FrameButtonDelete}" />
+                </Grid>
+                <Border
+                    Grid.Column="1"
+                    Style="{StaticResource BaseBorderInBorder}"
+                    Width="175">
+                    <ComboBox
+                        x:Name="SearchByCombobox"
+                        Style="{StaticResource FrameComboBox}"
+                        FocusManager.FocusedElement="{Binding ElementName=SearchTextBox}">
+                        <ComboBoxItem
+                            Content="Model" />
+                        <ComboBoxItem
+                            Content="Mark" />
+                        <ComboBoxItem
+                            Content="Data of manufacture" />
+                        <ComboBoxItem
+                            Content="Mileage" />
+                        <ComboBoxItem
+                            Content="Fuel consumption" />
+                    </ComboBox>
+                </Border>
+                <Border
+                    Grid.Column="3"
+                    Style="{StaticResource BaseBorderInBorder}"
+                    Width="250">
+                    <TextBox
+                        x:Name="SearchTextBox"
+                        
+                        Style="{StaticResource FrameTextBox}" />
+                </Border>
+            </Grid>
+        </Border>
+        <Border
+            Grid.ColumnSpan="4"
+            Margin="8,10,8,8"
+            BorderBrush="#FF7EC3E9"
+            CornerRadius="20"
+            BorderThickness="2"
+            Grid.RowSpan="2"
+            Grid.Row="1">
+            <Grid>
+                <Border
+                    x:Name="Bdborder"
+                    BorderThickness="0"
+                    CornerRadius="20"
+                    Background="White" />
+                <DataGrid
+                    ItemsSource="{Binding VehiclesCollection}"
+                    SelectedItem="{Binding SelectedVehicle}"
+                    IsReadOnly="True"
+                    materialDesign:DataGridAssist.CellPadding="20 4 15 4"
+                    materialDesign:DataGridAssist.ColumnHeaderPadding="20 4 15 4"
+                    FontSize="13"
+                    AutoGenerateColumns="False"
+                    Margin="0"
+                    BorderBrush="{x:Null}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Header="Model"
+                            Binding="{ Binding Path=Model}" />
+                        <DataGridTextColumn
+                            Header="Mark"
+                            Binding="{ Binding Path=Mark}" />
+                        <DataGridTextColumn
+                            Header="Date of manufacture"
+                            Binding="{ Binding Path=ManufactureDate}" />
+                        <DataGridTextColumn
+                            Header="Mileage"
+                            Binding="{ Binding Path=Mileage}" />
+                        <DataGridTextColumn
+                            Header="Fuel consumption"
+                            Binding="{ Binding Path=FuelConsumption}" />
+                    </DataGrid.Columns>
+                    <DataGrid.OpacityMask>
+                        <VisualBrush
+                            Visual="{Binding ElementName=Bdborder}" />
+                    </DataGrid.OpacityMask>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger
+                            EventName="MouseDoubleClick">
+                            <i:InvokeCommandAction
+                                Command="{Binding EditCommand}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

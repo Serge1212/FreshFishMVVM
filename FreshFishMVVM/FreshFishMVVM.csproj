@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Icon\Add32px.png" />
+    <None Remove="Resources\Icon\Delete32px.png" />
+    <None Remove="Resources\Icon\Edit32px.png" />
+    <None Remove="Resources\Icon\Excel1.png" />
+    <None Remove="Resources\Icon\icons8-print-34.png" />
+    <None Remove="Resources\Icon\IncomePage\ChevronDown%281%2915px.png" />
+    <None Remove="Resources\Icon\IncomePage\ChevronDown15px.png" />
+    <None Remove="Resources\Icon\IncomePage\ChevronUP15px.png" />
+    <None Remove="Resources\Icon\IncomePage\GetCash34px.png" />
+    <None Remove="Resources\Icon\IncomePage\PossibleIncime34px.png" />
+    <None Remove="Resources\Icon\IncomePage\Profit34px.png" />
+    <None Remove="Resources\Icon\MenuIcon\Garage-door.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-aquarium-34 %281%29.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-deliver-food-34.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-order-history-34.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-outdoor-camera-34.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-profit-presentation-34.png" />
+    <None Remove="Resources\Icon\MenuIcon\icons8-whole-fish-34.png" />
+    <None Remove="Resources\Icon\MenuIcon\Worker.png" />
+    <None Remove="Resources\Icon\Save40px.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BingMapsRESTToolkit" Version="1.1.4" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="MessagingToolkit.QRCode" Version="1.3.0" />
+    <PackageReference Include="Microsoft.Maps.MapControl.WPF" Version="1.0.0.3" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icon\Add32px.png" />
+    <Resource Include="Resources\Icon\Delete32px.png" />
+    <Resource Include="Resources\Icon\Edit32px.png" />
+    <Resource Include="Resources\Icon\Excel1.png" />
+    <Resource Include="Resources\Icon\icons8-print-34.png" />
+    <Resource Include="Resources\Icon\IncomePage\ChevronDown(1)15px.png" />
+    <Resource Include="Resources\Icon\IncomePage\ChevronDown15px.png" />
+    <Resource Include="Resources\Icon\IncomePage\ChevronUP15px.png" />
+    <Resource Include="Resources\Icon\IncomePage\GetCash34px.png" />
+    <Resource Include="Resources\Icon\IncomePage\PossibleIncime34px.png" />
+    <Resource Include="Resources\Icon\IncomePage\Profit34px.png" />
+    <Resource Include="Resources\Icon\MenuIcon\Garage-door.png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-aquarium-34 (1).png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-deliver-food-34.png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-order-history-34.png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-outdoor-camera-34.png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-profit-presentation-34.png" />
+    <Resource Include="Resources\Icon\MenuIcon\icons8-whole-fish-34.png" />
+    <Resource Include="Resources\Icon\MenuIcon\Worker.png" />
+    <Resource Include="Resources\Icon\Save40px.png" />
+  </ItemGroup>
+
+</Project>
