@@ -205,11 +205,6 @@
                     </DataGrid>
                 </Grid>
             </Border>
-        <!--<Frame Content="{Binding ProductFormCurrentState}"
-            FocusManager.IsFocusScope="False"
-            Grid.Column="2"
-            Grid.Row="1" />
-            -->
         </Grid>
     </Grid>
 </Page>
