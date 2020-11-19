@@ -66,10 +66,8 @@ namespace FreshFishMVVM.ViewModels
         private string _ruble;
         public string Ruble
         {
-            get
-            {
-                return _ruble;
-            }
+            get => _ruble;
+            
             set
             {
                 _ruble = value;
@@ -80,10 +78,8 @@ namespace FreshFishMVVM.ViewModels
         private string _bitcoin;
         public string Bitcoin
         {
-            get
-            {
-                return _bitcoin;
-            }
+            get => _bitcoin;
+            
             set
             {
                 _bitcoin = value;
