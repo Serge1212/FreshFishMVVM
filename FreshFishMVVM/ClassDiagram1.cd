@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FreshFishMVVM.GlobalVariables.Globals">
-    <Position X="43.25" Y="1" Width="1.5" />
+    <Position X="38.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAQ=</HashCode>
       <FileName>GlobalVariables\Globals.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FreshFishMVVM.Helpers.BreedingDetailsHelper" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="43.25" Y="0.5" Width="1.5" />
+  <Class Name="FreshFishMVVM.Helpers.BreedingDetailsHelper" BaseTypeListCollapsed="true">
+    <Position X="42.75" Y="5.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAAAAIA=</HashCode>
       <FileName>Helpers\BreedingDetailsHelper.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.Helpers.BreedingWeeksHelper" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="45" Y="0.5" Width="1.5" />
+    <Position X="43.25" Y="4.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAAAAIA=</HashCode>
       <FileName>Helpers\BreedingWeeksHelper.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.Helpers.ProductHelper" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="45" Y="2.5" Width="1.5" />
+    <Position X="41" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEABAAAAAAAAAAAAAAAAAEAAAAAAAgAAIAAAgAAAIA=</HashCode>
       <FileName>Helpers\ProductHelper.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.Helpers.VehicleHelper" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="41.5" Y="4.5" Width="1.5" />
+    <Position X="41" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAIAAAAAABIA=</HashCode>
       <FileName>Helpers\VehicleHelper.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.Helpers.WorkerHelper" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="4.5" Width="1.5" />
+    <Position X="41" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAIAAAAAAAIA=</HashCode>
       <FileName>Helpers\WorkerHelper.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.Models.BreedingDetail" Collapsed="true">
     <Position X="3" Y="1.75" Width="1.5" />
@@ -102,12 +102,12 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.ViewModels.Base.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="48.5" Y="2.5" Width="1.5" />
+    <Position X="41" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\Base\RelayCommand.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FreshFishMVVM.ViewModels.FishBreedingViewModels.BreedingWeeksViewModel" Collapsed="true">
     <Position X="5.25" Y="1.75" Width="1.5" />
@@ -205,202 +205,26 @@
       <FileName>ViewModels\WindowViewModel.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FreshFishMVVM.Views.PageForms.ProductForm" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="43.25" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\PageForms\ProductForm.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.BreedingWeeksPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\Pages\BreedingWeeksPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.DeliveryPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="48.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAQABABAAAAAQAAIAAAAAAAAAAAEAA=</HashCode>
-      <FileName>Views\Pages\DeliveryPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.FishBreedingPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="41.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAAA=</HashCode>
-      <FileName>Views\Pages\FishBreedingPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.IncomePage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="45" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\Pages\IncomePage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.ProductsPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\Pages\ProductsPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.VehiclesPage" BaseTypeListCollapsed="true">
-    <Position X="43.25" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\Pages\VehiclesPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.Pages.WorkersPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="48.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\Pages\WorkersPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Views.MainPage" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Views\MainPage.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.SelectedBreedingDetailsWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="41.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Windows\SelectedBreedingDetailsWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.SelectedBreedingWeeksWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="43.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Windows\SelectedBreedingWeeksWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.SelectedProductWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="45" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Windows\SelectedProductWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.SelectedVehicleWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Windows\SelectedVehicleWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.SelectedWorkerWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="48.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Windows\SelectedWorkerWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.WindowResizer" Collapsed="true">
-    <Position X="45" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AgAAAIQEAAAAQAACAIBAIEAEAAIACAAAACAIAAAAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FreshFishMVVM.Windows.MONITORINFO" Collapsed="true">
-    <Position X="41.5" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAACAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FreshFishMVVM.App" Collapsed="true">
-    <Position X="41.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>App.xaml.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FreshFishMVVM.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="48.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MainWindow.xaml.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Struct Name="FreshFishMVVM.Windows.Rectangle" Collapsed="true">
-    <Position X="45" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAACACAAAAAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="FreshFishMVVM.Windows.MINMAXINFO" Collapsed="true">
-    <Position X="41.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAQBAAAAAAACAAAIAAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="FreshFishMVVM.Windows.POINT" Collapsed="true">
-    <Position X="43.25" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Struct>
   <Interface Name="FreshFishMVVM.Helpers.IClosable" Collapsed="true">
-    <Position X="41.5" Y="7" Width="1.5" />
+    <Position X="41" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Helpers\IClosable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="FreshFishMVVM.Helpers.IHelper&lt;T&gt;">
-    <Position X="47.75" Y="6.25" Width="2" />
+  <Interface Name="FreshFishMVVM.Helpers.IHelper&lt;T&gt;" Collapsed="true">
+    <Position X="36.5" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAAAAIA=</HashCode>
       <FileName>Helpers\IHelper.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="FreshFishMVVM.Helpers.IViewModelCommands" Collapsed="true">
-    <Position X="45" Y="7" Width="1.5" />
+    <Position X="36.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAARAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\IViewModelCommands.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="FreshFishMVVM.Windows.WindowDockPosition" Collapsed="true">
-    <Position X="43.25" Y="8.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="FreshFishMVVM.Windows.MonitorOptions" Collapsed="true">
-    <Position X="41.5" Y="8" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIAQAAAAAAAA=</HashCode>
-      <FileName>Windows\WindowResizer.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
