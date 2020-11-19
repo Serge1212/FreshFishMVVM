@@ -3,13 +3,11 @@ using FreshFishMVVM.GlobalVariables;
 using FreshFishMVVM.Helpers;
 using FreshFishMVVM.Models;
 using FreshFishMVVM.ViewModels.Base;
-using FreshFishMVVM.Views.PageForms;
 using FreshFishMVVM.Windows;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Reactive.Linq;
-using System.Windows.Controls;
-using System.Windows.Forms;
 
 namespace FreshFishMVVM.ViewModels
 {
@@ -22,10 +20,38 @@ namespace FreshFishMVVM.ViewModels
         private RelayCommand _addCommand;
         private RelayCommand _editCommand;
         private RelayCommand _removeCommand;
+        private int _selectedSearchComboBoxIndex;
+        private string _searchingText;
         #endregion
 
         #region Public Properties
-        public ObservableCollection<Product> ProductsCollection { get; set; }
+        public static ObservableCollection<Product> ProductsCollection { get; set; }
+        public int SelectedSearchComboBoxIndex
+        {
+            get => _selectedSearchComboBoxIndex;
+            set
+            {
+                _selectedSearchComboBoxIndex = value;
+                OnPropertyChanged("SelectedSearchComboBoxIndex");
+            }
+        }
+
+        public string SearchingText
+        {
+            get => _searchingText;
+            set
+            {
+                _searchingText = value;
+                OnPropertyChanged("SearchingText");
+
+                if(SelectedSearchComboBoxIndex == 0)
+                {
+                    var SearchedList = (from product in ProductsCollection
+                                        where product.ProductName.ToLower().StartsWith(SearchingText)
+                                        select product).ToList();
+                }
+            }
+        }
         public Product SelectedProduct
         {
             get => _selectedProduct; 

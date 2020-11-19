@@ -129,6 +129,7 @@
                         Width="175">
                         <ComboBox
                             Style="{StaticResource FrameComboBox}"
+                            x:Name="SearchByCombobox"
                             FocusManager.FocusedElement="{Binding ElementName=SearchTextBox}">
                             <ComboBoxItem
                                 Content="Product Name" />
@@ -146,7 +147,7 @@
                         Width="250">
                         <TextBox
                             x:Name="SearchTextBox"
-
+                            TextChanged="TextBox_TextChanged"
                             Style="{StaticResource FrameTextBox}" />
                     </Border>
                 </Grid>
