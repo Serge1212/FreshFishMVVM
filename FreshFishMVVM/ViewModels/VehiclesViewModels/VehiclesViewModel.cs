@@ -22,7 +22,7 @@ namespace FreshFishMVVM.ViewModels
 
 
         #region Public Properties
-        public ObservableCollection<Vehicle> VehiclesCollection { get; set; }
+        public static ObservableCollection<Vehicle> VehiclesCollection { get; set; }
         public Vehicle SelectedVehicle
         {
             get => _selectedVehicle;

@@ -118,7 +118,7 @@
                     Width="250">
                     <TextBox
                         x:Name="SearchTextBox"
-                        
+                        TextChanged="SearchTextBox_TextChanged"
                         Style="{StaticResource FrameTextBox}" />
                 </Border>
             </Grid>
@@ -132,12 +132,17 @@
             Grid.RowSpan="2"
             Grid.Row="1">
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition Width="63*"/>
+                </Grid.ColumnDefinitions>
                 <Border
                     x:Name="Bdborder"
                     BorderThickness="0"
                     CornerRadius="20"
-                    Background="White" />
+                    Background="White" Grid.ColumnSpan="2" />
                 <DataGrid
+                    x:Name="VehiclesDataGrid"
                     ItemsSource="{Binding VehiclesCollection}"
                     SelectedItem="{Binding SelectedVehicle}"
                     IsReadOnly="True"
@@ -145,8 +150,7 @@
                     materialDesign:DataGridAssist.ColumnHeaderPadding="20 4 15 4"
                     FontSize="13"
                     AutoGenerateColumns="False"
-                    Margin="0"
-                    BorderBrush="{x:Null}">
+                    BorderBrush="{x:Null}" Grid.ColumnSpan="2">
                     <DataGrid.Columns>
                         <DataGridTextColumn
                             Header="Model"

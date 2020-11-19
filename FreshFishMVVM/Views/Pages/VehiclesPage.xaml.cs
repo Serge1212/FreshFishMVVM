@@ -26,5 +26,44 @@ namespace FreshFishMVVM.Views.Pages
             InitializeComponent();
             DataContext = new VehiclesViewModel();
         }
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (SearchByCombobox.SelectedIndex == 0)
+            {
+                var SearchedList = (from vehicle in VehiclesViewModel.VehiclesCollection
+                                    where vehicle.Model.ToLower().StartsWith(SearchTextBox.Text.ToLower())
+                                    select vehicle).ToList();
+                VehiclesDataGrid.ItemsSource = SearchedList;
+            }
+            if (SearchByCombobox.SelectedIndex == 1)
+            {
+                var SearchedList = (from vehicle in VehiclesViewModel.VehiclesCollection
+                                    where vehicle.Mark.ToLower().StartsWith(SearchTextBox.Text.ToLower())
+                                    select vehicle).ToList();
+                VehiclesDataGrid.ItemsSource = SearchedList;
+            }
+            if (SearchByCombobox.SelectedIndex == 2)
+            {
+                var SearchedList = (from vehicle in VehiclesViewModel.VehiclesCollection
+                                    where vehicle.ManufactureDate.ToLower().StartsWith(SearchTextBox.Text.ToLower())
+                                    select vehicle).ToList();
+                VehiclesDataGrid.ItemsSource = SearchedList;
+            }
+            if (SearchByCombobox.SelectedIndex == 3)
+            {
+                var SearchedList = (from vehicle in VehiclesViewModel.VehiclesCollection
+                                    where vehicle.Mileage.ToLower().StartsWith(SearchTextBox.Text.ToLower())
+                                    select vehicle).ToList();
+                VehiclesDataGrid.ItemsSource = SearchedList;
+            }
+            if (SearchByCombobox.SelectedIndex == 4)
+            {
+                var SearchedList = (from vehicle in VehiclesViewModel.VehiclesCollection
+                                    where vehicle.FuelConsumption.ToLower().StartsWith(SearchTextBox.Text.ToLower())
+                                    select vehicle).ToList();
+                VehiclesDataGrid.ItemsSource = SearchedList;
+            }
+        }
     }
 }

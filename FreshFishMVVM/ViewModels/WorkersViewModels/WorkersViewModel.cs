@@ -21,7 +21,7 @@ namespace FreshFishMVVM.ViewModels
         #endregion
 
         #region Public Properties 
-        public ObservableCollection<Worker> WorkersCollection { get; set; }
+        public static ObservableCollection<Worker> WorkersCollection { get; set; }
         public Worker SelectedWorker
         {
             get => _selectedWorker; 

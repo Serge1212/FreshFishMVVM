@@ -123,7 +123,7 @@
                     Width="250">
                     <TextBox
                         x:Name="WorkersSearchTextBox"
-
+                        TextChanged="WorkersSearchTextBox_TextChanged"
                         Style="{StaticResource FrameTextBox}" />
                 </Border>
             </Grid>

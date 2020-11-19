@@ -147,7 +147,7 @@ namespace FreshFishMVVM.Models
             {
                 _manufactureDate = value;
                 OnPropertyChanged("ManufactureDate");
-                manufacturerChanged = true;
+                //manufacturerChanged = true;
             }
         }
         public string Mileage

@@ -26,5 +26,57 @@ namespace FreshFishMVVM.Views.Pages
             InitializeComponent();
             DataContext = new WorkersViewModel();
         }
+        private void WorkersSearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (WorkersSearchComboBox.SelectedIndex == 0)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Name.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 1)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Surname.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 2)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Patronymic.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 3)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Position.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 4)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Salary.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 5)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.PhoneNumber.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+            if (WorkersSearchComboBox.SelectedIndex == 6)
+            {
+                var SearchedList = (from worker in WorkersViewModel.WorkersCollection
+                                    where worker.Address.ToLower().StartsWith(WorkersSearchTextBox.Text.ToLower())
+                                    select worker).ToList();
+                WorkersDataGrid.ItemsSource = SearchedList;
+            }
+        }
     }
 }
